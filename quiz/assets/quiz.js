@@ -2,8 +2,7 @@ var answers = [];
 var gender;
 function searchAnswer () {
   for (var i = 0; i < dbQuiz[gender].length; i++) {
-    // dbQuiz[gender][i].ans.length == answers.length && dbQuiz[gender][i].ans.every(function(v,i) {return v === answers[i]})
-    if (JSON.stringify(dbQuiz[gender][i].ans.sort()) == JSON.stringify(answers.sort())) {
+    if (JSON.stringify(dbQuiz[gender][i].ans.sort()) == JSON.stringify(sortCopy(answers))) {
       var container = document.getElementById("matches");
       console.log(dbQuiz[gender][i].models);
       container.innerHTML = "";
@@ -42,4 +41,8 @@ function goBack (pos) {
   console.log(pos);
   $('.quiz_step').removeClass('active');
   $($('.quiz_step')[pos]).addClass('active');
+}
+
+function sortCopy(arr) {
+  return arr.slice(0).sort();
 }
