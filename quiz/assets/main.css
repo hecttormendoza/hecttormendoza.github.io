@@ -64,7 +64,15 @@ body, html {
     font-family:"CenturySchoolbookW01-Bo1119217";
 }
 /* FONTS END */
-
+.back {
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-family: 'apercubold';
+  margin: 20px 0px;
+  text-align: right;
+  text-transform: uppercase;
+}
 .button {
   background: #fff;
   border: 3px solid #000;
