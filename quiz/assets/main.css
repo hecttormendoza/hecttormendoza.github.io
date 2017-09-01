@@ -263,7 +263,7 @@ body, html {
 
 
 /* Button styles */
-.style:hover > .button {
+.style .answers .answer:hover > .button {
   background: #000;
   color: #fff;
   transition: all 0.2s ease-in-out;
