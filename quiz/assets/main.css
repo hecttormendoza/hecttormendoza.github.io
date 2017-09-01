@@ -260,3 +260,11 @@ body, html {
   margin-left: 0;
   width: 260px;
 }
+
+
+/* Button styles */
+.style:hover > .button {
+  background: #000;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
