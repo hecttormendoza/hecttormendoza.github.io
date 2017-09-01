@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/fontface.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <script type="text/javascript" src="assets/quiz.js"></script>
+    <script type="text/javascript" src="assets/respuestas.js"></script>
+  </head>
+  <body>
+    <div class="quiz_page">
+      <div class="quiz_step start active">
+        <div class="text">
+          <div class="text_container">
+            <div class="title apercu_bold">
+              <hr>
+              <h3 class="century_bold">el test de</h3> los frutilentes
+              <hr>
+            </div>
+            <p class="din">la guia suprema que resolverá el misterio de qué lentes te quedan mejor</p>
+            <div class="button dimelo" onclick="progress(1)">
+              ¡dímelo ya!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quiz_step gender">
+        <h3 class="apercu_bold">Primero lo primero <br> eres...</h3>
+        <div class="answers">
+          <div class="button" onclick="progress(2, 'hombre')">
+            Hombre
+          </div>
+          <div class="button" onclick="progress(2, 'mujer')">
+            mujer
+          </div>
+        </div>
+      </div>
+      <div class="quiz_step style">
+        <h3 class="apercu_bold">considerarías que tu estilo es...</h3>
+        <div class="answers">
+          <div class="answer">
+            <div class="button" onclick="progress(3, 'clásico')">
+              clásico contemporaneo
+            </div>
+            <p class="din">los colores neutros y las formas clásicas son siempre tu opción</p>
+            <img src="assets/clasico.svg" alt="Clásico Contemporaneo">
+          </div>
+          <div class="answer">
+            <div class="button"  onclick="progress(3, 'moderno')">
+              modernou fashionista
+            </div>
+            <p class="din">lo tuyo, lo tuyo son los accesorios llamativos que resalten tu estilo</p>
+            <img src="assets/modernou.svg" alt="Modernou Fashionista">
+          </div>
+        </div>
+      </div>
+      <div class="quiz_step head">
+        <h3 class="apercu_bold">si tuvieras cabeza de fruta serías ...</h3>
+        <div class="answers">
+          <div class="answer">
+            <img src="assets/pina.svg" alt="Piña">
+            <div class="button" onclick="progress(4, 'piña')">
+              piña
+            </div>
+          </div>
+          <div class="answer">
+            <img src="assets/guanabana.svg" alt="Guanábana">
+            <div class="button" onclick="progress(4, 'guanábana')">
+              guanábana
+            </div>
+          </div>
+          <div class="answer">
+            <img src="assets/calabaza.svg" alt="Calabaza">
+            <div class="button" onclick="progress(4, 'calabaza')">
+              Calabaza
+            </div>
+          </div>
+          <div class="answer">
+            <img src="assets/sandia.svg" alt="Sandía">
+            <div class="button" onclick="progress(4, 'sandía')">
+              Sandía
+            </div>
+          </div>
+          <div class="answer">
+            <img src="assets/melon.svg" alt="Melón">
+            <div class="button" onclick="progress(4, 'melón')">
+              Melón
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quiz_step size">
+        <h3 class="apercu_bold">de tamaño tu cara es más...</h3>
+        <div class="answers">
+          <div class="answer">
+            <div class="button" onclick="progress(5, 'chica')">
+              timón
+            </div>
+            <p class="din">fit chico</p>
+          </div>
+          <div class="answer">
+            <div class="button"  onclick="progress(5, 'mediano')">
+              simba
+            </div>
+            <p class="din">fit mediano</p>
+          </div>
+          <div class="answer">
+            <div class="button" onclick="progress(5, 'grande')">
+              pumba
+            </div>
+            <p class="din">fit grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="quiz_step chilaquiles">
+        <h3 class="apercu_bold">LOS CHILAQUILES SABEN MEJOR...</h3>
+        <div class="answers">
+          <div class="answer">
+            <div class="button" onclick="progress(6, 'verdes')">
+              verdes
+            </div>
+          </div>
+          <div class="answer">
+            <div class="button" onclick="progress(6, 'rojos')">
+              rojos
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quiz_step pastor">
+        <h3 class="apercu_bold">y los tacos de pastor...</h3>
+        <div class="answers">
+          <div class="answer">
+            <div class="button" onclick="progress(7)">
+              con piña
+            </div>
+          </div>
+          <div class="answer">
+            <div class="button" onclick="progress(7)">
+              sin piña
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quiz_step results">
+        <div class="matches" id="matches">
+          
+        </div>
+        <div class="match_text">
+          <h3 class="century_bold">tu combo <span class="apercu_bold">ganador...</span></h3>
+          <hr>
+          <p class="din">armazones discretos pero con sabor... el estilo ya lo traes en el porte.. unos lentes discretos serán tu mejor compañía</p>
+          <div class="button pedir">
+            pedir mi prueba
+          </div>
+          <div class="button mail">
+            mandar mi correo
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
