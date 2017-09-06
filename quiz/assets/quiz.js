@@ -7,7 +7,7 @@ function searchAnswer () {
       console.log(dbQuiz[gender][i].models);
       container.innerHTML = "";
       for (var j = 0; j < dbQuiz[gender][i].models.length; j++) {
-        container.innerHTML += '<div class="match"><img src="https://cdn.shopify.com/s/files/1/0838/5577/products/front_parks_cobre_large.jpg?v=1497995287" alt=""><p class="din">'+ dbQuiz[gender][i].models[j] +'</p><a href="#"><span class="apercu_bold">VER MODELO</span></a></div>';
+        container.innerHTML += '<div class="match"><img src="'+ dbQuiz[gender][i].models[j].image +'" alt=""><p class="din">'+ dbQuiz[gender][i].models[j].name +'</p><a href="'+ dbQuiz[gender][i].models[j].url +'"><span class="apercu_bold">VER MODELO</span></a></div>';
       }
     }
   }
