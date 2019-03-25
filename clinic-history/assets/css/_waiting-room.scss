@@ -1,0 +1,62 @@
+.patientwaiting {
+  display: block;
+
+  .container {
+    .collection {
+      border: none;
+      li {
+        &.collection-header {
+          border: none;
+          border-bottom: 2px solid;
+
+          h1 {
+            font-family: 'DINCondensed-Bold';
+            font-size: 20px;
+            letter-spacing: 0.140em;
+            line-height: 35px;
+            margin: 0;
+            text-transform: uppercase;
+          }
+        }
+
+        &.collection-item {
+          transition: .25s;
+
+          .secondary-content, .material-icons {
+            color: #000;
+          }
+
+          &:hover {
+            background-color: #ddd;
+            cursor: pointer;
+
+            .material-icons {
+              animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+              backface-visibility: hidden;
+              transform: translate3d(0, 0, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Shake animation
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

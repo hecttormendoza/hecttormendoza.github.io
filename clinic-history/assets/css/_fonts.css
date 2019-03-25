@@ -1,0 +1,117 @@
+/**
+ * TYPOGRAPHY
+ */
+
+ @font-face {
+   font-family:'DINCondensed-Bold';
+   src: url('../fonts/DINCondensed-Bold_gdi.eot');
+   src: url('../fonts/DINCondensed-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/DINCondensed-Bold_gdi.woff') format('woff'),
+     url('../fonts/DINCondensed-Bold_gdi.ttf') format('truetype'),
+     url('../fonts/DINCondensed-Bold_gdi.svg#DINCondensed-Bold') format('svg');
+   font-weight: 700;
+   font-style: normal;
+   font-stretch: condensed;
+   unicode-range: U+0020-25CA;
+ }
+
+ @font-face {
+   font-family: 'apercubold_italic';
+   src: url('../fonts/apercu_bold_italic-webfont.woff2') format('woff2'),
+     url('../fonts/apercu_bold_italic-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
+ }
+
+ @font-face {
+   font-family: 'apercubold';
+   src: url('../fonts/apercu_bold-webfont.woff2') format('woff2'),
+     url('../fonts/apercu_bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
+ }
+
+ @font-face {
+   font-family: 'apercu_monoregular';
+   src: url('../fonts/apercu_mono-webfont.woff2') format('woff2'),
+     url('../fonts/apercu_mono-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'Apercu Regular';
+   src: url('../fonts/apercu_regular-webfont.woff2') format('woff2'),
+     url('../fonts/apercu_regular-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'apercubold';
+   src: url('../fonts/apercu-bold-webfont.woff2') format('woff2'),
+     url('../fonts/apercu-bold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
+ }
+
+ @font-face {
+   font-family: 'apercubold_italic';
+   src: url('../fonts/apercu-bolditalic-webfont.woff2') format('woff2'),
+     url('../fonts/apercu-bolditalic-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
+ }
+
+ @font-face {
+   font-family: 'apercuitalic';
+   src: url('../fonts/apercu-italic-webfont.woff2') format('woff2'),
+     url('../fonts/apercu-italic-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'aperculight';
+   src: url('../fonts/apercu-light-webfont.woff2') format('woff2'),
+     url('../fonts/apercu-light-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'aperculight_italic';
+   src: url('../fonts/apercu-lightitalic-webfont.woff2') format('woff2'),
+     url('../fonts/apercu-lightitalic-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'apercumedium';
+   src: url('../fonts/apercu-medium-webfont.woff2') format('woff2'),
+     url('../fonts/apercu-medium-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
+ }
+
+ @font-face {
+   font-family: 'apercumedium_italic';
+   src: url('../fonts/apercu-mediumitalic-webfont.woff2') format('woff2'),
+     url('../fonts/apercu-mediumitalic-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'apercumono';
+   src: url('../fonts/apercu-mono-webfont.woff2') format('woff2'),
+     url('../fonts/apercu-mono-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+ }

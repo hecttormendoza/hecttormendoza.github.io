@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="766118980410-8hf2jppiv1mahs4a6di1q0em3m6v4qo6.apps.googleusercontent.com">
+    <title>Recetas Templos B&F</title>
+    <!-- Google js -->
+    <script
+      src="https://apis.google.com/js/platform.js"
+      async
+      defer
+    >
+    </script>
+    <!-- End -->
+    <script
+      src="assets/js/materialize/materialize.js">
+    </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.js">
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js">
+    </script>
+    <!-- Compiled and minified CSS -->
+    <link
+      href="assets/css/materialize/materialize.css"
+      rel="stylesheet"
+    >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--  Main files -->
+    <link
+      href="assets/css/_fonts.css"
+      rel="stylesheet"
+    >
+    <link
+      href="assets/css/login/login.css"
+      rel="stylesheet"
+    >
+    <!--  End -->
+  </head>
+  <body>
+    <nav class="nav-wrapper">
+      <a href="#" class="brand-logo center">
+        <img src="assets/images/header_logo_2x.png" alt="Ben & Frank">
+      </a>
+    </nav>
+    <div class="container">
+      <div class="login-module">
+        <div class="login">
+          ingresa
+          <form
+            class="formLogin"
+            >
+            <input type="hidden" name="action" value="login">
+            <div class="">
+              <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/login/login.js"></script>
+  </body>
+</html>

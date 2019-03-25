@@ -1,0 +1,36 @@
+.addCustomerModal {
+  &.modal {
+    .modal-content {
+      h1 {
+        font-family: "DINCondensed-Bold";
+        font-size: 20px;
+        letter-spacing: 0.14em;
+        line-height: 35px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      &.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      .error {
+        color: red;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+
+    .progress {
+      background-color: #000;
+      display: none;
+      position: absolute;
+      top: -8px;
+
+      .indeterminate {
+        background-color: #626262;
+      }
+    }
+  }
+}

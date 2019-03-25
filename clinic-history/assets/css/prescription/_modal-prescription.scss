@@ -1,0 +1,82 @@
+.prescriptionModal {
+  &.modal {
+    .modal-content {
+      h1 {
+        font-family: "DINCondensed-Bold";
+        font-size: 20px;
+        letter-spacing: 0.14em;
+        line-height: 35px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-family: 'DINCondensed-Bold';
+        font-size: 16px;
+        letter-spacing: 0.140em;
+        line-height: 28px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      .section-two {
+        border-top: 2px dotted #000;
+        padding-top: 50px;
+
+        .monofocal-options {
+          display: none;
+          margin-top: 20px;
+        }
+
+        .tables {
+          border-bottom: 1px dotted #000;
+          padding-bottom: 30px;
+
+          h2 {
+            margin: 20px 0px;
+          }
+
+          table {
+            font-family: 'Apercu Regular';
+            font-size: 12px;
+            letter-spacing: 0.100em;
+            line-height: 15px;
+            text-transform: uppercase;
+
+            tr {
+              td {
+                .only-field-wrapper {
+                  margin-top: -28px;
+                }
+
+                input {
+                  border: none;
+                  height: auto;
+                  font-family: 'Apercu Regular';
+                  font-size: 12px;
+                  letter-spacing: 0.100em;
+                  line-height: 15px;
+                  margin: 0;
+                  max-width: 56px;
+                  text-align: center;
+                  width: 56px;
+
+                  &:focus {
+                    border: none;
+                    box-shadow: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .btn-send {
+        .btn {
+          background-color: #000;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.selectTemploModal {
+  &.modal {
+    .modal-content {
+      h1 {
+        font-family: "DINCondensed-Bold";
+        font-size: 20px;
+        letter-spacing: 0.14em;
+        line-height: 35px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      .btn {
+        background-color: #000;
+        color: #fff;
+        display: block;
+        font-size: 12px;
+        height: auto;
+        line-height: 15px;
+        margin: 20px auto;
+        padding: 10px;
+        width: 180px;
+      }
+    }
+  }
+}
