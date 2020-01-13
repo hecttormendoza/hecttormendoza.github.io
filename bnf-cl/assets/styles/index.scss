@@ -98,6 +98,24 @@ body {
             padding: 14px 0px;
             text-align: center;
             width: 445px;
+
+            &:focus {
+              &::placeholder {
+                color: transparent;
+              }
+              &::-webkit-input-placeholder {
+                color:transparent;
+              }
+              &:-moz-placeholder {
+                color:transparent;
+              }
+              &::-moz-placeholder {
+                color:transparent;
+              }
+              &:-ms-input-placeholder {
+                color:transparent;
+              }
+            }
           }
 
           .btn-send {

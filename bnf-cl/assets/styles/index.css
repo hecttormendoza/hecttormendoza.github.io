@@ -84,6 +84,21 @@ body .container .wrapper .email-container .email-field input {
   text-align: center;
   width: 445px;
 }
+body .container .wrapper .email-container .email-field input:focus::placeholder {
+  color: transparent;
+}
+body .container .wrapper .email-container .email-field input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+body .container .wrapper .email-container .email-field input:focus:-moz-placeholder {
+  color: transparent;
+}
+body .container .wrapper .email-container .email-field input:focus::-moz-placeholder {
+  color: transparent;
+}
+body .container .wrapper .email-container .email-field input:focus:-ms-input-placeholder {
+  color: transparent;
+}
 body .container .wrapper .email-container .email-field .btn-send {
   background-color: #000;
   color: #fff;
