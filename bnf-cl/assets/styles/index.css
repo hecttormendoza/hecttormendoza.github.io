@@ -93,6 +93,21 @@ body .container .wrapper .email-container .email-field input {
   text-align: center;
   width: 445px;
 }
+body .container .wrapper .email-container .email-field input::placeholder {
+  color: #b3b3b3;
+}
+body .container .wrapper .email-container .email-field input::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
+body .container .wrapper .email-container .email-field input:-moz-placeholder {
+  color: #b3b3b3;
+}
+body .container .wrapper .email-container .email-field input::-moz-placeholder {
+  color: #b3b3b3;
+}
+body .container .wrapper .email-container .email-field input:-ms-input-placeholder {
+  color: #b3b3b3;
+}
 body .container .wrapper .email-container .email-field input:focus::placeholder {
   color: transparent;
 }
