@@ -1,0 +1,7 @@
+.grid-overlay {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image:
+      linear-gradient(to right, color-mix(in oklch, var(--fg) 5%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklch, var(--fg) 5%, transparent) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }

@@ -1,0 +1,103 @@
+#about {
+    position: relative; z-index: 1;
+    border-bottom: var(--border);
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 60vh;
+}
+  .about-col {
+    padding: var(--sp-8) var(--sp-6);
+    border-right: var(--border-thin);
+}
+.about-col:last-child {
+    border-right: none;
+}
+.about-col-label {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-xs);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.4;
+    margin-bottom: var(--sp-6);
+    padding-bottom: var(--sp-3);
+    border-bottom: var(--border-thin);
+}
+.about-headline {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: var(--text-xl);
+    text-transform: uppercase;
+    line-height: 1.0;
+    margin-bottom: var(--sp-6);
+}
+.about-body {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+    opacity: 0.8;
+    max-width: 55ch;
+}
+.about-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+}
+.about-list li {
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding-bottom: var(--sp-3);
+    border-bottom: var(--border-thin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-list li span {
+    opacity: 0.4;
+    font-weight: 400;
+    font-size: var(--text-xs);
+}
+.about-tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+}
+.tag {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-xs);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: var(--sp-1) var(--sp-3);
+    border: 1px solid color-mix(in oklch, var(--fg) 30%, transparent);
+    transition: background var(--ti), color var(--ti), border-color var(--ti);
+}
+.tag:hover {
+    background: var(--fg);
+    color: var(--bg);
+    border-color: var(--fg);
+    cursor: default;
+}
+.tag.accent {
+    background: var(--accent);
+    color: var(--white);
+    border-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-col {
+        border-right: none;
+        border-bottom: var(--border-thin);
+    }
+    .about-col:last-child {
+        border-bottom: none;
+    }
+}

@@ -1,0 +1,64 @@
+header {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--bg);
+    border-bottom: var(--border);
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: stretch;
+    gap: 0;
+}
+.nav-wordmark {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: var(--text-lg);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    padding: var(--sp-3) var(--sp-6);
+    border-right: var(--border);
+    display: flex; align-items: center; gap: var(--sp-2);
+    white-space: nowrap;
+}
+.nav-wordmark sup {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+    vertical-align: super;
+}
+nav {
+    display: flex; align-items: stretch;
+}
+nav a {
+    display: flex; align-items: center;
+    padding: var(--sp-3) var(--sp-4);
+    border-right: var(--border-thin);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-xs);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: background var(--ti), color var(--ti);
+}
+nav a:hover {
+    background: var(--fg); color: var(--bg);
+}
+
+.theme-toggle {
+    display: flex; align-items: center; justify-content: center;
+    padding: var(--sp-3) var(--sp-4);
+    border-left: var(--border-thin);
+    font-size: var(--text-xs);
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: background var(--ti), color var(--ti);
+}
+.theme-toggle:hover {
+    background: var(--fg); color: var(--bg);
+}
+
+@media (max-width: 900px) {
+    header { grid-template-columns: 1fr auto; }
+    nav { display: none; }
+}

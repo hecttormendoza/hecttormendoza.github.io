@@ -1,0 +1,25 @@
+.fade-in { opacity: 1; }
+@supports (animation-timeline: scroll()) {
+  .fade-in {
+    opacity: 0;
+    animation: fadeReveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+}
+@keyframes fadeReveal { to { opacity: 1; } }
+
+.reveal-clip { clip-path: inset(0 0 0 0); }
+@supports (animation-timeline: scroll()) {
+  .reveal-clip {
+    clip-path: inset(0 100% 0 0);
+    animation: clipReveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+}
+@keyframes clipReveal { to { clip-path: inset(0 0% 0 0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in, .reveal-clip { animation: none !important; opacity: 1 !important; clip-path: none !important; }
+}
